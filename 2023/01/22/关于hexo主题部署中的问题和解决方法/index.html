@@ -16,7 +16,7 @@
 <meta property="og:description" content="yilia主题配置hexo以及美化过程中的问题">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-22T02:24:23.000Z">
-<meta property="article:modified_time" content="2023-01-24T12:10:27.704Z">
+<meta property="article:modified_time" content="2023-01-24T12:32:12.064Z">
 <meta property="article:author" content="张明昊">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="yilia">
@@ -25,7 +25,7 @@
     <link rel="alternative" href="/atom.xml" title="Clues的博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assets/head.jpg">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -184,9 +184,9 @@
 <h2 id="yilia主题图片加载失败"><a href="#yilia主题图片加载失败" class="headerlink" title="yilia主题图片加载失败"></a>yilia主题图片加载失败</h2><p> 最大的可能性是路径出现问题</p>
 <p>我们要在yilia下source文件夹里创建一个存放图片的文件夹，将需要的图片存放到文件夹中，jpg的格式即可</p>
 <p>同时更改config.yml文件中得到avatar内容（值得注意的是要修改的是yilia下的config.yml，而不是blog路径下的config.yml）</p>
-<p>找到avatar函数 加上图片相对于<strong>yilia</strong>的路径</p>
+<p>找到avatar函数 加上图片相对于<strong>yilia&#x2F;source</strong>的路径</p>
 <p>例：E:\Blog\themes\yilia\source\assets</p>
-<p>avatar： source&#x2F;assets&#x2F;图片名称（带上格式后缀）</p>
+<p>avatar： &#x2F;assets&#x2F;图片名称（带上格式后缀）</p>
 <p>容易出错的点有两个：1.avatar后面记得要留一个空格</p>
 <p>​									   2.路径容易写成本地路径</p>
 <h2 id="增加评论功能gitment失败"><a href="#增加评论功能gitment失败" class="headerlink" title="增加评论功能gitment失败"></a>增加评论功能gitment失败</h2><p>首先我们通过f12可以观察到总共有两个错误</p>
@@ -204,30 +204,15 @@
 <p>2.valine （最终成功的方案）</p>
 <p>我采用的是blue_zy大佬的搭建方法</p>
 <p>大佬的相关博客链接放在这：<a target="_blank" rel="noopener" href="https://blog.csdn.net/blue_zy/article/details/79071414">https://blog.csdn.net/blue_zy/article/details/79071414</a></p>
+<h2 id="增加访问量统计（不蒜子）不显示"><a href="#增加访问量统计（不蒜子）不显示" class="headerlink" title="增加访问量统计（不蒜子）不显示"></a>增加访问量统计（不蒜子）不显示</h2><p>按照网上的教程配置之后发现没有显示，或者没有统计数据</p>
+<p>经过官网上的查询，不蒜子由于某种原因换网址了</p>
+<p>所以把配置过程中的网址改成：<a target="_blank" rel="noopener" href="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js</a></p>
+<p>详细可见：<a target="_blank" rel="noopener" href="http://ibruce.info/2015/04/04/busuanzi/">不蒜子官网</a></p>
+<h2 id="不蒜子统计网站浏览量巨大"><a href="#不蒜子统计网站浏览量巨大" class="headerlink" title="不蒜子统计网站浏览量巨大"></a>不蒜子统计网站浏览量巨大</h2><p>hexo s所展示的本地端口是通用的，所以当你推送到服务器之后便是正常的</p>
+<p>（我一开始还以为出问题了，找了半天发现原因）</p>
 
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -341,7 +326,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AEhexo%E4%BB%A5%E5%8F%8A%E7%BE%8E%E5%8C%96%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">yilia主题配置hexo以及美化过程中的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#yilia-%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text">yilia 的下载与使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yilia%E4%B8%BB%E9%A2%98%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E5%A4%B1%E8%B4%A5"><span class="toc-number">2.</span> <span class="toc-text">yilia主题图片加载失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BDgitment%E5%A4%B1%E8%B4%A5"><span class="toc-number">3.</span> <span class="toc-text">增加评论功能gitment失败</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#yilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AEhexo%E4%BB%A5%E5%8F%8A%E7%BE%8E%E5%8C%96%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">yilia主题配置hexo以及美化过程中的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#yilia-%E7%9A%84%E4%B8%8B%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text">yilia 的下载与使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yilia%E4%B8%BB%E9%A2%98%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E5%A4%B1%E8%B4%A5"><span class="toc-number">2.</span> <span class="toc-text">yilia主题图片加载失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BDgitment%E5%A4%B1%E8%B4%A5"><span class="toc-number">3.</span> <span class="toc-text">增加评论功能gitment失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F%E7%BB%9F%E8%AE%A1%EF%BC%88%E4%B8%8D%E8%92%9C%E5%AD%90%EF%BC%89%E4%B8%8D%E6%98%BE%E7%A4%BA"><span class="toc-number">4.</span> <span class="toc-text">增加访问量统计（不蒜子）不显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E8%92%9C%E5%AD%90%E7%BB%9F%E8%AE%A1%E7%BD%91%E7%AB%99%E6%B5%8F%E8%A7%88%E9%87%8F%E5%B7%A8%E5%A4%A7"><span class="toc-number">5.</span> <span class="toc-text">不蒜子统计网站浏览量巨大</span></a></li></ol>
                     </div>
                 </span>
             </div>
